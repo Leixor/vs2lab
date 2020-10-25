@@ -2,8 +2,8 @@ import logging
 import socket
 import json
 
-import constCS
-from context import lab_logging
+from . import constCS
+from .context import lab_logging
 
 lab_logging.setup(stream_level=logging.INFO)
 
@@ -16,12 +16,12 @@ class Client:
         self.sock.connect((constCS.HOST, constCS.PORT))
         self.logger.info("Client connected to socket " + str(self.sock))
 
-    def GET(self, name: str):
+    def get(self, name: str):
         self.logger.info("GET: " + name)
         return self.__handle_request("GET", name)
 
-    def GETALL(self):
-        self.logger.info("GETALL")
+    def get_all(self):
+        self.logger.info("GET_ALL")
         return self.__handle_request("GET_ALL", "")
 
     def __handle_request(self, request: str, name: str):

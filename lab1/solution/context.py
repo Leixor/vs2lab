@@ -17,7 +17,7 @@ def add_parent_path(steps_up=1):
 
 
 # Add the toplevel folder of the repository to the module search path
-add_parent_path()
+add_parent_path(2)
 
 # following imports are used by other modules to access shared packages
 from lib import lab_logging, lab_channel
