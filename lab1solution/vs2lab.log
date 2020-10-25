@@ -1,0 +1,47 @@
+2020-05-01 15:16:19,646 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:22,650 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:24,610 - vs2lab.a1_layers.client.Client - INFO - Client connected to socket <socket.socket fd=58, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55418), raddr=('127.0.0.1', 50007)>
+2020-05-01 15:16:28,147 - vs2lab.a1_layers.client.Client - INFO - GET: Ute
+2020-05-01 15:16:28,150 - vs2lab.a1_layers.client.Client - INFO - sent Request: {'type': 'GET', 'name': 'Ute'}
+2020-05-01 15:16:28,150 - vs2lab.a1_layers.server.Server - INFO - received data: b'{"type": "GET", "name": "Ute"}'
+2020-05-01 15:16:28,153 - vs2lab.a1_layers.server.Server - INFO - reply: {'type': 'SUCCESS', 'data': {'Ute': 2860968}}
+2020-05-01 15:16:28,155 - vs2lab.a1_layers.client.Client - INFO - received data: b'{"type": "SUCCESS", "data": {"Ute": 2860968}}'
+2020-05-01 15:16:28,155 - vs2lab.a1_layers.server.Server - INFO - reply sent
+2020-05-01 15:16:28,159 - vs2lab.a1_layers.client.Client - INFO - Client connected to socket <socket.socket fd=61, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55420), raddr=('127.0.0.1', 50007)>
+2020-05-01 15:16:28,163 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:30,912 - vs2lab.a1_layers.client.Client - INFO - Client down.
+2020-05-01 15:16:30,912 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:33,918 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:36,923 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:39,926 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:42,931 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:45,936 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-05-01 15:16:48,938 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:43,849 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:46,852 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:49,855 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:52,857 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:55,859 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:51:58,862 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:04,953 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:07,957 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:10,959 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:13,962 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:21,386 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:24,387 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:27,389 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:30,391 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:33,394 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:36,397 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 15:53:39,400 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 16:27:08,189 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 16:27:11,192 - vs2lab.a1_layers.server.Server - INFO - new serve loop
+2020-10-25 16:27:13,124 - vs2lab.a1_layers.client.Client - INFO - Client connected to socket <socket.socket fd=58, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58420), raddr=('127.0.0.1', 50007)>
+2020-10-25 16:27:16,267 - vs2lab.a1_layers.client.Client - INFO - GETALL
+2020-10-25 16:27:16,268 - vs2lab.a1_layers.client.Client - INFO - sent Request: {'type': 'GET_ALL', 'name': ''}
+2020-10-25 16:27:16,269 - vs2lab.a1_layers.server.Server - INFO - received data: b'{"type": "GET_ALL", "name": ""}'
+2020-10-25 16:27:16,269 - vs2lab.a1_layers.server.Server - INFO - reply: {'type': 'SUCCESS', 'data': {'Ute': 2860968, 'Rainer': 3905852, 'Harald': 6235534, 'Olaf': 9275980, 'Sarah': 6548766}}
+2020-10-25 16:27:16,270 - vs2lab.a1_layers.server.Server - INFO - reply sent
+2020-10-25 16:27:16,270 - vs2lab.a1_layers.client.Client - INFO - received data: b'{"type": "SUCCESS", "data": {"Ute": 2860968, "Rainer": 3905852, "Harald": 6235534, "Olaf": 9275980, "Sarah": 6548766}}'
+2020-10-25 16:27:16,271 - vs2lab.a1_layers.client.Client - INFO - Client connected to socket <socket.socket fd=61, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58422), raddr=('127.0.0.1', 50007)>
+2020-10-25 16:27:16,272 - vs2lab.a1_layers.server.Server - INFO - new serve loop
