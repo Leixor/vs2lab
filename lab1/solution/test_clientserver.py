@@ -1,11 +1,11 @@
 import logging
 import threading
 import unittest
-import json
 
-from .. import server
-from .. import client
-from .context import lab_logging
+import server
+import client
+from context import lab_logging
+from database import dictionaryList
 
 lab_logging.setup(stream_level=logging.INFO)
 
@@ -22,14 +22,14 @@ class TestEchoService(unittest.TestCase):
         super().setUp()
         self.client = client.Client()  # create new client for each test
 
-    def test_server_get(self):  # each test_* function is a test
+    def test_server_get(self):
         msg = self.client.get("Ute")
         self.assertEqual(msg.get('type'), 'SUCCESS')
         self.assertEqual(msg.get('data'), {'Ute': 2860968})
 
-    def test_server_get_all(self):  # each test_* function is a test
-        msg = self.client.getall()
-        self.assertEqual(msg, '2')
+    def test_server_get_all(self):
+        msg = self.client.get_all()
+        self.assertEqual(msg.get('data'), dictionaryList)
 
     def tearDown(self):
         self.client.close()  # terminate client after each test

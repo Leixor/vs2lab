@@ -2,8 +2,8 @@ import logging
 import socket
 import json
 
-from . import constCS
-from .context import lab_logging
+import constCS
+from context import lab_logging
 
 lab_logging.setup(stream_level=logging.INFO)
 

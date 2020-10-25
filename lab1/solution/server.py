@@ -3,10 +3,10 @@ import socket
 import json
 import traceback
 
-from . import constCS
-from . import database
+import constCS
+import database
 
-from .context import lab_logging
+from context import lab_logging
 
 lab_logging.setup(stream_level=logging.INFO)
 
@@ -15,10 +15,11 @@ class Server:
     logger = logging.getLogger("vs2lab.a1_layers.server.Server")
     _serving = True
 
-    def __init__(self):
+    def __init__(self, port=None):
+        print(port)
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.sock.bind((constCS.HOST, constCS.PORT))
+        self.sock.bind((constCS.HOST, port or constCS.PORT))
         self.sock.settimeout(3)
 
     def serve(self):
@@ -79,4 +80,4 @@ class Server:
 
 
 if __name__ == "__main__":
-    Server().serve()
+    Server(12312).serve()
