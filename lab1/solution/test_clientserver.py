@@ -23,9 +23,17 @@ class TestEchoService(unittest.TestCase):
         self.client = client.Client()  # create new client for each test
 
     def test_server_get(self):
-        msg = self.client.get("Ute")
-        self.assertEqual(msg.get('type'), 'SUCCESS')
-        self.assertEqual(msg.get('data'), {'Ute': 2860968})
+        name = "Ute"
+
+        msg = self.client.get(name)
+
+        data = msg.get('data')
+        type = msg.get('type')
+
+        self.assertEqual(type, 'SUCCESS')
+
+        self.assertEqual(list(data.keys())[0], name)
+        self.assertEqual(dictionaryList.get(name), 2860968)
 
     def test_server_get_all(self):
         msg = self.client.get_all()
