@@ -33,7 +33,7 @@ class TestEchoService(unittest.TestCase):
         self.assertEqual(type, 'SUCCESS')
 
         self.assertEqual(list(data.keys())[0], name)
-        self.assertEqual(dictionaryList.get(name), 2860968)
+        self.assertEqual(dictionaryList.get(name), data.get(name))
 
     def test_server_get_all(self):
         msg = self.client.get_all()
