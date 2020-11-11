@@ -157,7 +157,7 @@ Der Kommunikationskanal wird im Modul `vs2lab/lib/lab_channel.py` implementiert.
 `lab_channel` stellt einen Dienst für *persistente asynchrone Kommunikation*
 bereit. Dazu benutzt das Modul eine *Redis Datenbank*, auf der Warteschlangen
 für Nachrichten gespeichert werden. Das Modul wird detailliert in der
-Dokumentation [The Channel Package](../docs/channel.pdf) beschrieben.
+Dokumentation [The Channel Package](../../docs/channel.pdf) beschrieben.
 
 Ein Beispiel zur allgemeinen Verwendung finden Sie hier:
 
