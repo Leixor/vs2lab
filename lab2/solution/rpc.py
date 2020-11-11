@@ -33,7 +33,7 @@ class Client:
         self.chan.send_to(self.server, msglst)  # send msg to server
         msgrcv = self.chan.receive_from(self.server)  # wait for response
         if msgrcv[1][0] == constRPC.OK:
-            threading.Thread(target=self.handle_callback, args=callback).start()
+            threading.Thread(target=self.handle_callback, args=(callback,)).start()
             return
         else:
             raise Exception("No ACK")
